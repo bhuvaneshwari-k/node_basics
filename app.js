@@ -3,3 +3,4 @@ const name=require('./data');
 console.log(name);
 sayHi('bhuvana');
 sayHi(name.john);
+console.log('hello you')

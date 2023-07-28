@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <title>HTMLWithForms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="HTMLWithForms.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-front">
+                <i class="fa fa-cc-visa" style="font-size:50px"></i>
+                <div class="cardnumber-label">CARD NUMBER</div>
+                <div class="cardnumber">################</div>
+                <div class="labels">
+                   <div class="name-label">CARD HOLDER</div>
+                   <div class="date-label">EXPIRY mm</div>
+                   <div class="date-label">EXPIRY yyyy</div>
+                </div>
+                <div class="values">
+                   <div class="name">********</div>
+                   <div class="month">**</div>
+                   <div class="year">****</div>
+                </div>
+            </div>
+            <div class="card-back">
+                <span class="block1"></span>
+                <span class="block2"></span>
+                <div class="cvc">***</div>
+                <i class="fa fa-cc-visa" style="font-size:50px"></i>
+            </div>
+        </div>
+        <form>
+            <div class="form">
+                <div>
+                    <label>CREDIT CARD NUMBER</label>
+                    <input type="text" name="Number" id="Number" placeholder="*enter your number"></input>
+                </div>
+                
+                <div>
+                    <label>CARD HOLDER'S NAME</label>
+                    <input type="text" name="Name" id="Name" placeholder="*enter your name"></input>
+                </div>
+                <div class="flexbox">
+                    <div class="inputBox">
+                        <span>EXPIRY mm</span>
+                        <select class="month-input">
+                            <option value="month" selected disabled>month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>EXPIRY yy</span>
+                        <select class="year-input">
+                            <option value="year" selected disabled>year</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label>CVC</label>
+                    <input type="number" name="Code" id="Code" placeholder="*enter your code"></input>
+                </div>
+                <div class="button">
+                    <input type="button" onclick="submitForm()" value="Submit">
+                    <input type="button" onclick= "cancelForm()" value="Cancel">
+                </div>
+            </div>
+        </form>
+      <script src="HTMLWithForms.js"></script>
+    </body>
+</html>

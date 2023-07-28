@@ -1,0 +1,81 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-front ,.card-back{
+    padding: 20px;
+    width: 30%;
+    margin: 20px 20px 50px 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-style: oblique;
+    font-weight: 600;
+    background-color: rgb(123, 28, 71);
+    color: #ffffff;
+}
+div{
+    font-size:17px;
+    text-align: center;
+}
+.cardnumber-label,.cardnumber{
+    padding-top: 6%;
+}
+.labels,.values{
+    padding-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+.labels,.values div{
+   flex-basis: 30%;
+}
+.block1{
+   display: inline-block;
+   width: 100%;
+   height:40px;
+   background-color: black;
+}
+.block2{
+   /* margin-top: 5%; */
+   width: 80%;
+   height:40px;
+   background-color: rgb(255, 255, 255);
+   float: left;
+}
+.card-back i{
+    float:right;
+    margin-top: 35px;
+}
+form{
+    border: 2px solid rgb(225, 221, 221);
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.form div{
+     padding: 10px;
+    font-style: oblique;
+    font-weight: 600;
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{
+    width:15%;
+    height:35px;
+    border-radius: 5px;
+    text-align: center;
+}
+.button input{
+    background-color: rgb(123, 28, 71);
+    color: #ffffff;
+    border-radius: 10px;
+}
+.button input:hover{
+    background-color: rgb(92, 90, 91);
+}
+
