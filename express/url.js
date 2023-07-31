@@ -18,6 +18,7 @@ const server=http.createServer((req,res)=>{
         res.setHeader('Location','/')
         res.statusCode=302;
         return res.end()
+        
 
     }
        res.setHeader('content-type','text/html')

@@ -6,6 +6,7 @@ if(err){
     return
 }
 const first=result;
+console.log(first)
 readFile('./content/second.txt','utf8',(err,result)=>{
     if(err){
         console.log(err);
@@ -13,16 +14,17 @@ readFile('./content/second.txt','utf8',(err,result)=>{
         // throw err;
     }
     const second=result;
+    console.log(second)
     writeFile('./content/result-async.txt',`here is the result : ${first} , ${second}`,(err)=>{
         if(err){
             console.log(err);
             return
         }
       })
+      
 })
-
 });
-
+console.log('finished')
 // process.on('uncaughtException',err=>{
 //     console.error(`error thrown':${err}`);
 //     process.exit(1)

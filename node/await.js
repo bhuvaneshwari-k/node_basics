@@ -10,6 +10,7 @@ try{
     console.log('write completed')
     await fs.rename('./content/result-promise.txt','./content/result-promises.txt')
     // await fs.unlink('./content/result-promises.txt')
+    console.log('finished')
 }catch(err){
     console.log(err)
 }
